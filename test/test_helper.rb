@@ -9,12 +9,14 @@ require File.expand_path '../../app.rb', __FILE__
 
 Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
 
-include Rack::Test::Methods
+class MiniTest::Spec
+  include Rack::Test::Methods
 
-def app
-  Sinatra::Application
-end
+  def app
+    Sinatra::Application
+  end
 
-def parsed_body
-  ::MultiJson.decode(last_response.body, symbolize_keys: true)
+  def parsed_body
+    ::MultiJson.decode(last_response.body, symbolize_keys: true)
+  end
 end
