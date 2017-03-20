@@ -4,6 +4,12 @@ require 'sinatra/reloader'
 require 'active_record'
 require 'faraday'
 
+Dir['models/**/*.rb'].each { |file| require_relative file }
+also_reload 'models/**/*.rb'
+
+REVIEW_MONKEY_URL = 'http://credentials-api.generalassemb.ly/4576f55f-c427-4cfc-a11c-5bfe914ca6c1'
+
+ActiveRecord::Base.logger = Logger.new(STDOUT) unless settings.test?
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
   database: 'db/database.db'
