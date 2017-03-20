@@ -156,7 +156,11 @@ As part of this project, you must use this API to access film review data.  The 
 
 #### Relevant Documentation
 
-**TODO: add gem documentation**
+* [Sinatra](http://www.sinatrarb.com/intro.html)
+* [Sinatra Standard Addons](http://www.sinatrarb.com/contrib/)
+* [Faraday](https://github.com/lostisland/faraday)
+* [Active Record](http://guides.rubyonrails.org/active_record_querying.html)
+* [Pry](http://pryrepl.org/)
 
 ---
 
@@ -168,9 +172,7 @@ The FreshPotatoes tech team will look for:
 
 * **Production-level code**. - As you implement your solution, think about maintainability, extensibility, security, and performance.
 
-* **Consistent code**. To the best of your abilities, adhere to the [styleguide](styleguide.md) provided.
-
-**TODO: add ruby styleguide**
+* **Consistent code**. To the best of your abilities, adhere to the [styleguide](https://github.com/bbatsov/ruby-style-guide) provided.
 
 ---
 
