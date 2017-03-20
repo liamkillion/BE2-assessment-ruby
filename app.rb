@@ -7,7 +7,7 @@ require 'faraday'
 Dir['models/**/*.rb'].each { |file| require_relative file }
 also_reload 'models/**/*.rb'
 
-REVIEW_MONKEY_URL = 'http://credentials-api.generalassemb.ly/4576f55f-c427-4cfc-a11c-5bfe914ca6c1'
+REVIEW_MONKEY_URL = 'http://credentials-api.generalassemb.ly/4576f55f-c427-4cfc-a11c-5bfe914ca6c1'.freeze
 
 ActiveRecord::Base.logger = Logger.new(STDOUT) unless settings.test?
 ActiveRecord::Base.establish_connection(
