@@ -157,7 +157,7 @@ As part of this project, you must use this API to access film review data.  The 
 #### Relevant Documentation
 
 * [Sinatra](http://www.sinatrarb.com/intro.html)
-* [Sinatra Standard Addons](http://www.sinatrarb.com/contrib/)
+* [Sinatra Standard Add-ons](http://www.sinatrarb.com/contrib/)
 * [Faraday](https://github.com/lostisland/faraday)
 * [Active Record](http://guides.rubyonrails.org/active_record_querying.html)
 * [Pry](http://pryrepl.org/)
