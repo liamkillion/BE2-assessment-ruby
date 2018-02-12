@@ -18,3 +18,7 @@ ActiveRecord::Base.establish_connection(
 get '/films/:film_id/recommendations' do
   puts params
 end
+
+get '/' do
+  puts 'Testing'
+end
