@@ -178,11 +178,11 @@ The FreshPotatoes tech team will look for:
 
 ## How To Submit Your Work
 
-Create a public Dropbox or Google Drive folder with your work and email the folder URL to
-<a href="mailto:credentials@ga.co">credentials@ga.co</a>.  In the subject line, include your name and the company's name, if applicable.
+Create a public Dropbox or Google Drive folder with your work and email the folder URL to your admissions producer.  
 
 ---
 
 #### Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
 All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+# BE2-assessment-ruby
