@@ -8,6 +8,7 @@ gem 'rake'
 gem 'warning'
 gem 'activerecord', '5.0.2'
 gem 'sqlite3'
+gem 'rest-client'
 
 group :development, :test do
   gem 'pry'

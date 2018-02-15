@@ -5,7 +5,7 @@ require 'active_record'
 require 'faraday'
 require 'rest-client'
 require 'json'
-require 'byebug'
+require 'pry'
 
 Dir['models/**/*.rb'].each { |file| require_relative file }
 also_reload 'models/**/*.rb'
@@ -19,11 +19,14 @@ ActiveRecord::Base.establish_connection(
 )
 
 get '/films/:film_id/recommendations' do
-  response = RestClient.get(REVIEW_MONKEY_URL)
-  byebug
-  films = JSON.parse(response)
-  byebug
-  film = films.each {|film| film.film_id===params["film_id"].to_i}
+  url = "#{REVIEW_MONKEY_URL}?films=#{params[:film_id]}"
+  begin
+     response = RestClient.get(url)
+   rescue RestClient::ExceptionWithResponse => e
+     e.response
+   end
+  res = JSON.parse(response)
+  render json: res["reviews"]
 end
 
 get '/' do
