@@ -36,7 +36,7 @@ get '/films/:film_id/recommendations' do
     cumulative_ratings = 0
     reviews.each{|review| review['rating'] +=  cumulative_ratings}
     # if the film (from genre films) meets the criteria, add to rated_genre_films
-    if reviews.length>5 && cumulative_ratings/reviews.length>4 do
+    if reviews.length>5 && cumulative_ratings/reviews.length>4 
         rated_genre_films.push(film)
     end
   end
